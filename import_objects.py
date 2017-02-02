@@ -78,8 +78,8 @@ def entry_point():
             name = i['_id']
             data = json.dumps(i['_source'])
             url = host + 'visualization/' + name
-            #response = requests.put(url, data=data)
-            #print 'Visualization Status: ' + str(response)
+            response = requests.put(url, data=data)
+            print 'Visualization Status: ' + str(response)
 
     #Import Dashboards
     if dashboards_json:
@@ -91,8 +91,8 @@ def entry_point():
             name = i['_id']
             data = json.dumps(i['_source'])
             url = host + 'dashboard/' + name
-            #response = requests.put(url, data=data)
-            #print 'Dashboard Status: ' + str(response)
+            response = requests.put(url, data=data)
+            print 'Dashboard Status: ' + str(response)
 
     #Import Searches
     if searches_json:
@@ -104,8 +104,8 @@ def entry_point():
             name = i['_id']
             data = json.dumps(i['_source'])
             url = host + 'search/' + name
-            #response = requests.put(url, data=data)
-            #print 'Search Status: ' + str(response)
+            response = requests.put(url, data=data)
+            print 'Search Status: ' + str(response)
 
     #Show list of indexes
     if cl_args.ilist:
@@ -125,7 +125,7 @@ def entry_point():
 
     #Delete index
     if cl_args.remove:
-        print "printing Index"
+        print "Deleting Index"
         url = host2 + cl_args.remove + '?pretty'
         response = requests.delete(url)
         print response.text

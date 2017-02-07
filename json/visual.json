@@ -1,6 +1,6 @@
 [
   {
-    "_id": "Keystone-Success-%",
+    "_id": "Keystone-Success-Percentage",
     "_type": "visualization",
     "_source": {
       "title": "Keystone Success %",
@@ -14,7 +14,7 @@
     }
   },
   {
-    "_id": "Nova-Success-%",
+    "_id": "Nova-Success-Percentage",
     "_type": "visualization",
     "_source": {
       "title": "Nova Success %",
@@ -28,7 +28,7 @@
     }
   },
   {
-    "_id": "Swift-Success-%",
+    "_id": "Swift-Success-Percentage",
     "_type": "visualization",
     "_source": {
       "title": "Swift Success %",
